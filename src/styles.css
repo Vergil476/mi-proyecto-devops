@@ -64,3 +64,9 @@ section {
 h2 {
     color: #ff2e2e;
 }
+
+/* Mejora del fondo y tipografía */
+body {
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    font-family: 'Arial', sans-serif;
+}
