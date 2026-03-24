@@ -70,3 +70,10 @@ body {
     background: linear-gradient(to bottom, #000000, #1a1a1a);
     font-family: 'Arial', sans-serif;
 }
+
+/* Estilo para subtítulos */
+h2 {
+    color: #ff2e2e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
