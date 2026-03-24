@@ -1,10 +1,7 @@
+/* Mejora del fondo y tipografía */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top, #1a1a1a, #000000 80%);
-    color: #e0e0e0;
-    text-align: center;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    font-family: 'Arial', sans-serif;
 }
 
 /* Título principal */
@@ -63,12 +60,6 @@ section {
 
 h2 {
     color: #ff2e2e;
-}
-
-/* Mejora del fondo y tipografía */
-body {
-    background: linear-gradient(to bottom, #000000, #1a1a1a);
-    font-family: 'Arial', sans-serif;
 }
 
 /* Estilo para subtítulos */
