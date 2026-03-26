@@ -14,6 +14,7 @@ if not os.path.exists("src/styles.css"):
 if not os.path.exists("README.md") or os.path.getsize("README.md") == 0:
     errors.append("README.md no existe o está vacío")
 
+
 html = os.path.join("src", "index.html")
 
 
