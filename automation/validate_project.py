@@ -1,6 +1,5 @@
 import os
 import sys
-import index.html as html
 
 
 
@@ -15,6 +14,7 @@ if not os.path.exists("src/styles.css"):
 if not os.path.exists("README.md") or os.path.getsize("README.md") == 0:
     errors.append("README.md no existe o está vacío")
 
+html = os.path.join("src", "index.html")
 
 
 if html.count("<h1>") < 1:
@@ -22,7 +22,6 @@ if html.count("<h1>") < 1:
 
 if html.count("<p>") < 1:
     errors.append("index.html debe contener al menos un párrafo")
-
 
 
 if errors:
