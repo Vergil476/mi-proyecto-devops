@@ -1,7 +1,5 @@
 import os
 import sys
-import index.html as html
-
 
 
 errors = []
@@ -16,14 +14,13 @@ if not os.path.exists("src/styles.css"):
 if not os.path.exists("README.md") or os.path.getsize("README.md") == 0:
     errors.append("README.md no existe o está vacío")
 
-
-
-if html.count("<h1>") < 1:
-    errors.append("index.html debe contener un h1")
+#Validacion CSS (integrante 2)
+if os.path.exists("src/styles.css"):
+    with open("src/styles.css", "r", encoding="utf-8") as f:
+        css = f.read()
 
     if css.count("{") > 2:
-        errors.append("styles.css debe contener al menos dos reglas CSS")
-
+        errors.append("styles.css debe contener solo dos reglas CSS")
 
 
 if errors:
