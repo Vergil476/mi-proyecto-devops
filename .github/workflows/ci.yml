@@ -27,8 +27,8 @@ jobs:
 
       - name: Mensaje de éxito
         if: success()
-        run: echo "✅ Todo correcto: el proyecto pasó todas las validaciones"
+        run: echo "✅ Todo correcto, el proyecto pasó todas las validaciones"
 
       - name: Mensaje de error
         if: failure()
-        run: echo "❌ Error: el proyecto no pasó las validaciones"
+        run: echo "❌ Error, el proyecto no pasó las validaciones"
