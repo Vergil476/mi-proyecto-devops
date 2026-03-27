@@ -19,8 +19,8 @@ if os.path.exists("src/styles.css"):
     with open("src/styles.css", "r", encoding="utf-8") as f:
         css = f.read()
 
-    if css.count("{") > 2:
-        errors.append("styles.css debe contener solo dos reglas CSS")
+    if css.count("{") < 2:
+        errors.append("styles.css debe contener al menos dos reglas CSS")
 
 
 if errors:
