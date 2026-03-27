@@ -32,3 +32,13 @@ jobs:
       - name: Mensaje de error
         if: failure()
         run: echo "❌ Error, el proyecto no pasó las validaciones"
+
+
+      - name: CI completado exitosamente
+        if: success()
+        run: echo "Todas las validaciones pasaron correctamente. El proyecto está listo." 
+
+
+      - name: CI fallido
+        if: failure()
+        run: echo "El pipeline falló. Revisa las validaciones antes de continuar."
