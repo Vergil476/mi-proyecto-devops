@@ -33,7 +33,7 @@ p:last-of-type {
 }
 
 /* Contenedor central tipo panel */
-body::before {
+{
     content: "";
     position: fixed;
     top: 0;
