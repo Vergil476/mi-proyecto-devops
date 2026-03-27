@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - feature-ci
+      - feature-ci-advanced
   pull_request:
 
 jobs:
@@ -12,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Descargar el código del repositorio
+      - name: Descargar el código
         uses: actions/checkout@v3
 
       - name: Configurar Python
@@ -20,5 +21,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Ejecutar script de validación
+      - name: Ejecutar validación
+        id: validacion
         run: python automation/validate_project.py
+
+      - name: Mensaje de éxito
+        if: success()
+        run: echo "✅ Todo correcto: el proyecto pasó todas las validaciones"
+
+      - name: Mensaje de error
+        if: failure()
+        run: echo "❌ Error: el proyecto no pasó las validaciones"
