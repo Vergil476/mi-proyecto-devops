@@ -18,10 +18,10 @@ if os.path.exists("src/index.html"):
     with open("src/index.html", "r", encoding="utf-8") as f:
         html = f.read()
 
-    if html.count("<h1>") < 1:
+    if html.count("< H1>") < 1:
         errors.append("index.html debe contener al menos una etiqueta <h1>")
 
-    if html.count("<p>") < 1:
+    if html.count("<P>") < 1:
         errors.append("index.html debe contener al menos una etiqueta <p>")
 
 # Validación CSS

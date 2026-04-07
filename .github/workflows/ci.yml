@@ -6,6 +6,7 @@ on:
       - main
       - feature-ci
       - feature-ci-advanced
+      - external-review
   pull_request:
 
 jobs:
